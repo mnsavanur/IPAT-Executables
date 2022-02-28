@@ -1,0 +1,239 @@
+01/27/2022 22:14:35 INFO  MainClass:32 - Reading config file kept at U:\Automation\vc\CMP_Automation\Projects\Insurity\TestConfig.xlsx
+01/27/2022 22:14:35 INFO  Init:31 - Closing all excel files..
+01/27/2022 22:14:37 INFO  Config:66 - Read the config file successfully
+01/27/2022 22:14:37 INFO  Config:68 - Loaded the configuration parameters
+01/27/2022 22:14:39 INFO  MongoDB:44 - Mongo DB instance details not found in Config file. Results will not be stored in database
+01/27/2022 22:14:39 INFO  DataProviders:28 - Reading TestSuite Tab : TestSuite
+01/27/2022 22:14:40 INFO  TestCase:39 - *************** Starting execution of Smoke_02_NBIS ***************
+01/27/2022 22:14:41 INFO  Controller:565 - Broswer to be launched: Chrome
+01/27/2022 22:14:42 INFO  WebDriverHelper:128 - Killed previous instances of Chrome WebDriver
+01/27/2022 22:14:48 INFO  WebDriverHelper:88 - Launching Google Chrome web browser....
+01/27/2022 22:15:07 INFO  CustomScreenRecorder:63 - Recording started for Smoke_02_NBIS
+01/27/2022 22:15:11 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:15:11 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Login *********
+01/27/2022 22:15:11 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:15:14 INFO  UiHandler:151 - --->Username: | Text Box-I | Value=msavanur | Locator=//input[@id='Text1']
+01/27/2022 22:15:16 INFO  Assertions:245 - Successfully Entered 'msavanur' as value in the textbox.
+01/27/2022 22:15:16 INFO  UiHandler:151 - --->Password: | Text Box-I | Value=ICWms12232021! | Locator=//input[@id='Password1']
+01/27/2022 22:15:18 INFO  Assertions:245 - Successfully Entered 'ICWms12232021!' as value in the textbox.
+01/27/2022 22:15:18 INFO  UiHandler:151 - --->Submit | Button-C | Value=Y | Locator=//button[@id='btnLogin']
+01/27/2022 22:15:24 INFO  UiHandler:435 - Successfully Clicked on Submit button
+01/27/2022 22:15:24 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:15:24 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Home *********
+01/27/2022 22:15:24 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:15:24 INFO  UiHandler:151 - --->Transaction Type: | Dropdown-I | Value=NBIS | Locator=//input[@id="CoPolicyCreateSelectHTML_DynamicStore_TransTypeCd_comboboxinput"]
+01/27/2022 22:15:26 INFO  UiHandler:489 - Successfully selected NBIS as value from the Transaction Type: dropdown
+01/27/2022 22:15:26 INFO  UiHandler:151 - --->Policy Type: | Dropdown-I | Value=GL | Locator=//input[@id="CoPolicyCreateSelectHTML_DynamicStore_PolicyTypeLob_comboboxinput"]
+01/27/2022 22:15:28 INFO  UiHandler:489 - Successfully selected GL as value from the Policy Type: dropdown
+01/27/2022 22:15:28 INFO  UiHandler:151 - --->Policy Effective Date: | Date-I | Value=Current Date | Locator=//label[text()="Policy Effective Date:"]/../following-sibling::div//input
+01/27/2022 22:15:31 INFO  Assertions:833 - Successfully entered date as 01/27/2022 as value for Policy Effective Date:
+01/27/2022 22:15:31 INFO  UiHandler:151 - --->Create Policy | Button-C | Value=Y | Locator=//button[contains(.,'Create Policy')]
+01/27/2022 22:15:49 INFO  UiHandler:435 - Successfully Clicked on Create Policy button
+01/27/2022 22:15:49 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:15:49 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Common_Information *********
+01/27/2022 22:15:49 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:15:50 INFO  UiHandler:151 - --->Insured's Short Name: | Text Box-I | Value=Jack Test | Locator=//label[contains(.,"Insured's Short Name:")]/..//following-sibling::div[1]//input
+01/27/2022 22:15:51 INFO  Assertions:245 - Successfully Entered 'Jack Test' as value in the textbox.
+01/27/2022 22:15:51 INFO  UiHandler:151 - --->Account Number: | Text Box-I | Value=11111 | Locator=//label[contains(.,"Account Number:")]/..//following-sibling::div[1]//input
+01/27/2022 22:15:52 INFO  Assertions:245 - Successfully Entered '11111' as value in the textbox.
+01/27/2022 22:15:52 INFO  UiHandler:151 - --->Insurance Company: | Dropdown-I | Value=10 | Locator=//label[contains(.,"Insurance Company:")]/..//following-sibling::div[1]//input
+01/27/2022 22:15:55 INFO  UiHandler:489 - Successfully selected 10 as value from the Insurance Company: dropdown
+01/27/2022 22:15:55 INFO  UiHandler:151 - --->Predominant State: | Dropdown-I | Value=IL | Locator=//label[contains(.,"Predominant State:")]/..//following-sibling::div[1]//input
+01/27/2022 22:15:57 INFO  UiHandler:489 - Successfully selected IL as value from the Predominant State: dropdown
+01/27/2022 22:15:57 INFO  UiHandler:151 - --->Audit Period: | Dropdown-I | Value=A | Locator=//label[contains(.,"Audit Period:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:00 INFO  UiHandler:489 - Successfully selected A as value from the Audit Period: dropdown
+01/27/2022 22:16:00 INFO  UiHandler:151 - --->Producer: | Text Box-I | Value=0000005 | Locator=//label[contains(.,"Producer:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:02 INFO  Assertions:245 - Successfully Entered '0000005' as value in the textbox.
+01/27/2022 22:16:02 INFO  UiHandler:151 - --->SIC Code: | Text Box-I | Value=1771 | Locator=//label[contains(.,"SIC Code:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:03 INFO  Assertions:245 - Successfully Entered '1771' as value in the textbox.
+01/27/2022 22:16:03 INFO  UiHandler:151 - --->NAICS Code: | Text Box-I | Value=111110 | Locator=//label[contains(.,"NAICS Code:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:05 INFO  Assertions:245 - Successfully Entered '111110' as value in the textbox.
+01/27/2022 22:16:05 INFO  UiHandler:151 - --->Save | Button-C | Value=Y | Locator=//button[contains(.,'Save')]
+01/27/2022 22:16:10 INFO  UiHandler:435 - Successfully Clicked on Save button
+01/27/2022 22:16:10 INFO  UiHandler:151 - --->Underwriter/Operator | Button-C | Value=Y | Locator=//button[normalize-space()='Underwriter/Operator']
+01/27/2022 22:16:13 INFO  UiHandler:435 - Successfully Clicked on Underwriter/Operator button
+01/27/2022 22:16:13 INFO  UiHandler:151 - --->Underwriter: | Dropdown-I | Value=ADMINISTRATOR | Locator=//label[contains(.,"Underwriter:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:15 INFO  UiHandler:489 - Successfully selected ADMINISTRATOR as value from the Underwriter: dropdown
+01/27/2022 22:16:15 INFO  UiHandler:151 - --->Transaction Info | Button-C | Value=Y | Locator=//button[normalize-space()='Transaction Info']
+01/27/2022 22:16:17 INFO  UiHandler:435 - Successfully Clicked on Transaction Info button
+01/27/2022 22:16:17 INFO  UiHandler:151 - --->Policy Type: | Dropdown-I | Value=IMN | Locator=//label[contains(.,"Policy Type:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:19 INFO  UiHandler:489 - Successfully selected IMN as value from the Policy Type: dropdown
+01/27/2022 22:16:19 INFO  UiHandler:151 - --->Next | Button-C | Value=Y | Locator=//button[contains(.,'Next')]
+01/27/2022 22:16:22 INFO  UiHandler:435 - Successfully Clicked on Next button
+01/27/2022 22:16:22 INFO  UiHandler:151 - --->Next1 | Button-C | Value=Y | Locator=//button[contains(.,'Next')]
+01/27/2022 22:16:28 INFO  UiHandler:435 - Successfully Clicked on Next1 button
+01/27/2022 22:16:28 INFO  UiHandler:151 - --->SAN | DataHandler-W;;PolicyNum | Value=Smoke_02_NBIS | Locator=//label[@originallabelvalue='SystemAssignId']
+01/27/2022 22:16:31 INFO  UiHandler:207 - Value '48720300000000' successfully written in Data Carrier file against TC 'Smoke_02_NBIS' and column 'PolicyNum'.
+01/27/2022 22:16:31 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:16:31 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : General_Liability *********
+01/27/2022 22:16:31 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:16:31 INFO  UiHandler:151 - --->Policy Type: | Dropdown-I | Value=1 | Locator=//label[contains(.,"Policy Type:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:33 INFO  UiHandler:489 - Successfully selected 1 as value from the Policy Type: dropdown
+01/27/2022 22:16:33 INFO  UiHandler:151 - --->General Aggr: | Dropdown-I | Value=1000000 | Locator=//label[contains(.,"General Aggr:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:36 INFO  UiHandler:489 - Successfully selected 1000000 as value from the General Aggr: dropdown
+01/27/2022 22:16:36 INFO  UiHandler:151 - --->Opt Coverages | Button-C | Value=Y | Locator=//li[contains(.,'Opt Coverages')]
+01/27/2022 22:16:37 INFO  UiHandler:435 - Successfully Clicked on Opt Coverages button
+01/27/2022 22:16:37 INFO  UiHandler:151 - --->Optional Coverages | Dropdown-I | Value=PAST;GlPolCoveragesHTML | Locator=//input[@id='GlPolCovgEdit_cboAddCoverage_comboboxinput']
+01/27/2022 22:16:41 INFO  UiHandler:489 - Successfully selected PAST;GlPolCoveragesHTML as value from the Optional Coverages dropdown
+01/27/2022 22:16:41 INFO  UiHandler:151 - --->Add Coverage | Button-C | Value=Y | Locator=//button[contains(.,'Add Coverage')]
+01/27/2022 22:16:44 INFO  UiHandler:435 - Successfully Clicked on Add Coverage button
+01/27/2022 22:16:44 INFO  UiHandler:151 - --->Premium: | Text Box-I | Value=100,000 | Locator=//label[contains(.,"Premium:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:45 INFO  Assertions:245 - Successfully Entered '100,000' as value in the textbox.
+01/27/2022 22:16:45 INFO  UiHandler:151 - --->Class Code: | Text Box-I | Value=9000 | Locator=//label[contains(.,"Class Code:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:47 INFO  Assertions:245 - Successfully Entered '9000' as value in the textbox.
+01/27/2022 22:16:47 INFO  UiHandler:151 - --->Next | Button-C | Value=Y | Locator=//button[contains(.,'Next')]
+01/27/2022 22:16:49 INFO  UiHandler:435 - Successfully Clicked on Next button
+01/27/2022 22:16:50 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:16:50 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : States *********
+01/27/2022 22:16:50 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:16:50 INFO  UiHandler:151 - --->Next | Button-C | Value=Y | Locator=//button[contains(.,'Next')]
+01/27/2022 22:16:52 INFO  UiHandler:435 - Successfully Clicked on Next button
+01/27/2022 22:16:52 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:16:52 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : ClassCode *********
+01/27/2022 22:16:52 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:16:52 INFO  UiHandler:151 - --->Add Location-Class Code | Button-C | Value=Y | Locator=//button[contains(.,'Add Location-Class Code')]
+01/27/2022 22:16:53 INFO  UiHandler:435 - Successfully Clicked on Add Location-Class Code button
+01/27/2022 22:16:53 INFO  UiHandler:151 - --->Street Address: | Text Box-I | Value=Test Street address 1 | Locator=//label[contains(.,"Street Address:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:56 INFO  Assertions:245 - Successfully Entered 'Test Street address 1' as value in the textbox.
+01/27/2022 22:16:56 INFO  UiHandler:151 - --->Location No: | Text Box-I | Value=001 | Locator=//label[contains(.,"Location No:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:58 INFO  Assertions:245 - Successfully Entered '001' as value in the textbox.
+01/27/2022 22:16:58 INFO  UiHandler:151 - --->Building No: | Text Box-I | Value=002 | Locator=//label[contains(.,"Building No:")]/..//following-sibling::div[1]//input
+01/27/2022 22:16:59 INFO  Assertions:245 - Successfully Entered '002' as value in the textbox.
+01/27/2022 22:16:59 INFO  UiHandler:151 - --->City: | Text Box-I | Value=Antioch | Locator=//label[contains(.,"City:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:01 INFO  Assertions:245 - Successfully Entered 'Antioch' as value in the textbox.
+01/27/2022 22:17:01 INFO  UiHandler:151 - --->County: | Text Box-I | Value=Lake | Locator=//label[contains(.,"County:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:02 INFO  Assertions:245 - Successfully Entered 'Lake' as value in the textbox.
+01/27/2022 22:17:02 INFO  UiHandler:151 - --->Zip Code: | Text Box-I | Value=60002 | Locator=//label[contains(.,"Zip Code:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:04 INFO  Assertions:245 - Successfully Entered '60002' as value in the textbox.
+01/27/2022 22:17:04 INFO  UiHandler:151 - --->Save and Close | Button-C | Value=Y | Locator=//button[contains(.,'Save and Close')]
+01/27/2022 22:17:10 INFO  UiHandler:435 - Successfully Clicked on Save and Close button
+01/27/2022 22:17:10 INFO  UiHandler:151 - --->Class Code: | Text Box-I | Value=10015 | Locator=//label[contains(.,"Class Code:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:12 INFO  Assertions:245 - Successfully Entered '10015' as value in the textbox.
+01/27/2022 22:17:12 INFO  UiHandler:151 - --->Exposure: | Text Box-I | Value=100,000 | Locator=//label[contains(.,"Exposure:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:14 INFO  Assertions:245 - Successfully Entered '100,000' as value in the textbox.
+01/27/2022 22:17:14 INFO  UiHandler:151 - --->Rating Options | Button-C | Value=Y | Locator=//button[normalize-space()='Rating Options']
+01/27/2022 22:17:17 INFO  UiHandler:435 - Successfully Clicked on Rating Options button
+01/27/2022 22:17:17 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:17:17 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Rating Options *********
+01/27/2022 22:17:17 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:17:17 INFO  UiHandler:151 - --->Resequence Locs/Vehs | Checkbox-C | Value=check | Locator=//label[text()="Resequence Locs/Vehs"]//preceding-sibling::input
+01/27/2022 22:17:18 INFO  UiHandler:795 - Successfully selected checkbox 'Resequence Locs/Vehs'.
+01/27/2022 22:17:18 INFO  UiHandler:151 - --->Re-rate All Lobs | Checkbox-C | Value=check | Locator=//label[text()="Re-rate All Lobs"]//preceding-sibling::input
+01/27/2022 22:17:19 INFO  UiHandler:795 - Successfully selected checkbox 'Re-rate All Lobs'.
+01/27/2022 22:17:19 INFO  UiHandler:151 - --->Start Rating | Button-C | Value=Y | Locator=//button[contains(.,'Start Rating')]
+01/27/2022 22:17:27 INFO  UiHandler:435 - Successfully Clicked on Start Rating button
+01/27/2022 22:17:27 INFO  UiHandler:151 - --->Next | Button-C | Value=Y | Locator=//button[contains(.,'Next')]
+01/27/2022 22:17:29 INFO  UiHandler:435 - Successfully Clicked on Next button
+01/27/2022 22:17:29 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:17:29 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Issuing_Information *********
+01/27/2022 22:17:29 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:17:29 INFO  UiHandler:151 - --->Policy Number1: | Text Box-I | Value=CMP | Locator=(//label[contains(.,"Policy Number:")]/..//following-sibling::div[1]//input)[1]
+01/27/2022 22:17:31 INFO  Assertions:245 - Successfully Entered 'CMP' as value in the textbox.
+01/27/2022 22:17:31 INFO  UiHandler:151 - --->Policy Number2: | DataReader-R | Value=Smoke_02_NBIS | Locator=(//label[contains(.,"Policy Number:")]/..//following-sibling::div[1]//input)[2]
+01/27/2022 22:17:31 INFO  UiHandler:240 - Value '48720300000000' successfully read from Data Carrier file against TC 'Smoke_02_NBIS' and column 'PolicyNum'.
+01/27/2022 22:17:32 INFO  UiHandler:151 - --->Mailing Address: | Text Box-I | Value=Abc | Locator=//label[contains(.,"Mailing Address:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:33 INFO  Assertions:245 - Successfully Entered 'Abc' as value in the textbox.
+01/27/2022 22:17:33 INFO  UiHandler:151 - --->City: | Text Box-I | Value=Antioch | Locator=//label[contains(.,"City:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:35 INFO  Assertions:245 - Successfully Entered 'Antioch' as value in the textbox.
+01/27/2022 22:17:35 INFO  UiHandler:151 - --->State: | Dropdown-I | Value=IL | Locator=//label[contains(.,"State:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:37 INFO  UiHandler:489 - Successfully selected IL as value from the State: dropdown
+01/27/2022 22:17:37 INFO  UiHandler:151 - --->Zip Code: | Text Box-I | Value=60002 | Locator=//label[contains(.,"Zip Code:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:39 INFO  Assertions:245 - Successfully Entered '60002' as value in the textbox.
+01/27/2022 22:17:39 INFO  UiHandler:151 - --->Business Type: | Dropdown-I | Value=01 | Locator=//label[contains(.,"Business Type:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:41 INFO  UiHandler:489 - Successfully selected 01 as value from the Business Type: dropdown
+01/27/2022 22:17:41 INFO  UiHandler:151 - --->Next | Button-C | Value=Y | Locator=//button[contains(.,'Next')]
+01/27/2022 22:17:44 INFO  UiHandler:435 - Successfully Clicked on Next button
+01/27/2022 22:17:44 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:17:44 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Billing *********
+01/27/2022 22:17:44 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:17:44 INFO  UiHandler:151 - --->Billing Type: | Dropdown-I | Value=D | Locator=//label[contains(.,"Billing Type:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:46 INFO  UiHandler:489 - Successfully selected D as value from the Billing Type: dropdown
+01/27/2022 22:17:46 INFO  UiHandler:151 - --->Payment Plan: | Dropdown-I | Value=2 | Locator=//label[contains(.,"Payment Plan:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:50 INFO  UiHandler:489 - Successfully selected 2 as value from the Payment Plan: dropdown
+01/27/2022 22:17:50 INFO  UiHandler:151 - --->Policy Forms | Button-C | Value=Y | Locator=//button[normalize-space()='Policy Forms']
+01/27/2022 22:17:54 INFO  UiHandler:435 - Successfully Clicked on Policy Forms button
+01/27/2022 22:17:54 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:17:54 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Policy_Forms *********
+01/27/2022 22:17:54 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:17:54 INFO  UiHandler:151 - --->Line of Business: | Dropdown-I | Value=** | Locator=//label[contains(.,"Line of Business:")]/..//following-sibling::div[1]//input
+01/27/2022 22:17:58 INFO  UiHandler:489 - Successfully selected ** as value from the Line of Business: dropdown
+01/27/2022 22:17:58 INFO  UiHandler:151 - --->View Select: | Dropdown-I | Value=Fillin | Locator=//label[contains(.,"View Select:")]/..//following-sibling::div[1]//input
+01/27/2022 22:18:01 INFO  UiHandler:489 - Successfully selected Fillin as value from the View Select: dropdown
+01/27/2022 22:18:01 INFO  UiHandler:151 - --->Yes_1 | Link-C | Value=Yes | Locator=//a[text()="Yes"]
+01/27/2022 22:18:02 INFO  Assertions:373 - Field values matched. Actual: Yes, Expected: Yes
+01/27/2022 22:18:05 INFO  UiHandler:151 - --->Next_1 | Button-C | Value=Y | Locator=//button[@title='Next']
+01/27/2022 22:18:07 INFO  UiHandler:435 - Successfully Clicked on Next_1 button
+01/27/2022 22:18:07 INFO  UiHandler:151 - --->Issue | Button-C | Value=Y | Locator=//button[normalize-space()='Issue']
+01/27/2022 22:18:09 INFO  UiHandler:435 - Successfully Clicked on Issue button
+01/27/2022 22:18:09 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:18:09 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Issue *********
+01/27/2022 22:18:09 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:18:09 INFO  UiHandler:151 - --->Issue | Button-C | Value=Y | Locator=//button[contains(@title,'Issue')]
+01/27/2022 22:18:15 INFO  UiHandler:435 - Successfully Clicked on Issue button
+01/27/2022 22:18:15 INFO  Controller:256 - ================================================================================================================
+01/27/2022 22:18:15 INFO  Controller:260 - ********* Test Case : Smoke_02_NBIS | Transaction : Status *********
+01/27/2022 22:18:15 INFO  Controller:285 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:18:15 INFO  UiHandler:151 - --->Search Criteria: | Dropdown-I | Value=32 | Locator=(//label[contains(.,"Search Criteria:")])[2]/..//following-sibling::div[1]//input
+01/27/2022 22:18:17 INFO  UiHandler:489 - Successfully selected 32 as value from the Search Criteria: dropdown
+01/27/2022 22:18:17 INFO  UiHandler:151 - --->Search Description: | DataReader-R | Value=Smoke_02_NBIS | Locator=(//label[contains(.,"Search Description:")])[2]/..//following-sibling::div[1]//input
+01/27/2022 22:18:17 INFO  UiHandler:240 - Value '48720300000000' successfully read from Data Carrier file against TC 'Smoke_02_NBIS' and column 'PolicyNum'.
+01/27/2022 22:18:18 INFO  UiHandler:151 - --->Search | Button-C | Value=Y | Locator=(//button[contains(.,'Search')])[2]
+01/27/2022 22:18:19 ERROR UiHandler:96 - VisibilityOfElement\ElementToBeClickable condition failed
+01/27/2022 22:18:21 INFO  UiHandler:435 - Successfully Clicked on Search button
+01/27/2022 22:18:21 INFO  UiHandler:151 - --->Refresh Status | Status- | Value=Y | Locator=//button[normalize-space()='Refresh Status']
+01/27/2022 22:18:50 INFO  UiHandler:282 - Process Status: Available
+01/27/2022 22:18:53 INFO  Base:109 - Completed test case execution
+01/27/2022 22:18:53 INFO  CustomScreenRecorder:93 - Recording saved at :U:\Automation\vc\CMP_Automation/TestExecutionReport/ScreenRecordings/Smoke_02_NBIS-27Jan22_22_15_08.avi
+01/27/2022 22:18:53 INFO  TestCase:45 - *************** Starting execution of Smoke_02_Canc ***************
+01/27/2022 22:18:54 INFO  Controller:565 - Broswer to be launched: Chrome
+01/27/2022 22:18:54 INFO  CustomScreenRecorder:63 - Recording started for Smoke_02_Canc
+01/27/2022 22:18:55 INFO  Controller:414 - ================================================================================================================
+01/27/2022 22:18:55 INFO  Controller:418 - ********* Test Case : Smoke_02_Canc | Transaction : Home *********
+01/27/2022 22:18:55 INFO  Controller:443 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:18:55 INFO  UiHandler:151 - --->Search Criteria: | Dropdown-I | Value=32 | Locator=(//label[contains(.,"Search Criteria:")]/..//following-sibling::div[1]//input)[3]
+01/27/2022 22:18:58 INFO  UiHandler:489 - Successfully selected 32 as value from the Search Criteria: dropdown
+01/27/2022 22:18:58 INFO  UiHandler:151 - --->Search Description: | DataReader-R | Value=Smoke_02_Canc | Locator=(//label[contains(.,"Search Description:")])[2]/..//following-sibling::div[1]//input
+01/27/2022 22:18:58 INFO  UiHandler:240 - Value 'Test Case 'Smoke_02_Canc' not found in Data Carrier file.' successfully read from Data Carrier file against TC 'Smoke_02_Canc' and column 'PolicyNum'.
+01/27/2022 22:19:00 INFO  UiHandler:151 - --->Search | Button-C | Value=Y | Locator=(//button[contains(.,'Search')])[2]
+01/27/2022 22:19:03 INFO  UiHandler:435 - Successfully Clicked on Search button
+01/27/2022 22:19:03 INFO  UiHandler:151 - --->Policy Action: | Dropdown-I | Value=CANC | Locator=//label[contains(.,"Policy Action:")]/..//following-sibling::div[1]//input
+01/27/2022 22:19:06 INFO  UiHandler:489 - Successfully selected CANC as value from the Policy Action: dropdown
+01/27/2022 22:19:06 INFO  UiHandler:151 - --->Go | Button-C | Value=Y | Locator=//button[normalize-space()='Go']
+01/27/2022 22:19:08 INFO  UiHandler:435 - Successfully Clicked on Go button
+01/27/2022 22:19:08 INFO  UiHandler:151 - --->Trans Eff Date: | Date-I | Value=Current Date | Locator=//label[contains(.,"Trans Eff Date:")]/..//following-sibling::div[1]//input
+01/27/2022 22:19:10 INFO  Assertions:833 - Successfully entered date as 01/27/2022 as value for Trans Eff Date:
+01/27/2022 22:19:10 INFO  UiHandler:151 - --->Next | Button-C | Value=Y | Locator=//button[contains(.,'Next')]
+01/27/2022 22:19:15 INFO  UiHandler:435 - Successfully Clicked on Next button
+01/27/2022 22:19:15 INFO  UiHandler:151 - --->Reason Code: | Dropdown-I | Value=99 | Locator=//label[contains(.,"Reason Code:")]/..//following-sibling::div[1]//input
+01/27/2022 22:19:18 INFO  UiHandler:489 - Successfully selected 99 as value from the Reason Code: dropdown
+01/27/2022 22:19:18 INFO  UiHandler:151 - --->Rating Options | Button-C | Value=Y | Locator=//button[normalize-space()='Rating Options']
+01/27/2022 22:19:20 INFO  UiHandler:435 - Successfully Clicked on Rating Options button
+01/27/2022 22:19:21 INFO  Controller:414 - ================================================================================================================
+01/27/2022 22:19:21 INFO  Controller:418 - ********* Test Case : Smoke_02_Canc | Transaction : Rating Options *********
+01/27/2022 22:19:21 INFO  Controller:443 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:19:21 INFO  UiHandler:151 - --->Start Rating | Button-C | Value=Y | Locator=//button[contains(.,'Start Rating')]
+01/27/2022 22:19:27 INFO  UiHandler:435 - Successfully Clicked on Start Rating button
+01/27/2022 22:19:27 INFO  UiHandler:151 - --->Next | Button-C | Value=Y | Locator=//button[contains(.,'Next')]
+01/27/2022 22:19:29 INFO  UiHandler:435 - Successfully Clicked on Next button
+01/27/2022 22:19:29 INFO  Controller:414 - ================================================================================================================
+01/27/2022 22:19:29 INFO  Controller:418 - ********* Test Case : Smoke_02_Canc | Transaction : Issue *********
+01/27/2022 22:19:29 INFO  Controller:443 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:19:29 INFO  UiHandler:151 - --->Issue | Button-C | Value=Y | Locator=//button[contains(@title,'Issue')]
+01/27/2022 22:19:32 INFO  UiHandler:435 - Successfully Clicked on Issue button
+01/27/2022 22:19:32 INFO  Controller:414 - ================================================================================================================
+01/27/2022 22:19:32 INFO  Controller:418 - ********* Test Case : Smoke_02_Canc | Transaction : Status *********
+01/27/2022 22:19:32 INFO  Controller:443 - Data sheet File :U:\Automation\vc\CMP_Automation\Projects\Insurity\TestSuite.xlsx
+01/27/2022 22:19:32 INFO  UiHandler:151 - --->Search Criteria: | Dropdown-I | Value=32 | Locator=(//label[contains(.,"Search Criteria:")])[2]/..//following-sibling::div[1]//input
+01/27/2022 22:19:35 INFO  UiHandler:489 - Successfully selected 32 as value from the Search Criteria: dropdown
+01/27/2022 22:19:35 INFO  UiHandler:151 - --->Search Description: | DataReader-R | Value=Smoke_02_NBIS | Locator=(//label[contains(.,"Search Description:")])[2]/..//following-sibling::div[1]//input
+01/27/2022 22:19:35 INFO  UiHandler:240 - Value '48720300000000' successfully read from Data Carrier file against TC 'Smoke_02_NBIS' and column 'PolicyNum'.
+01/27/2022 22:19:36 INFO  UiHandler:151 - --->Search | Button-C | Value=Y | Locator=(//button[contains(.,'Search')])[2]
+01/27/2022 22:19:38 ERROR UiHandler:96 - VisibilityOfElement\ElementToBeClickable condition failed
+01/27/2022 22:19:39 INFO  UiHandler:435 - Successfully Clicked on Search button
+01/27/2022 22:19:39 INFO  UiHandler:151 - --->Refresh Status | Status- | Value=Y | Locator=//button[normalize-space()='Refresh Status']
+01/27/2022 22:19:54 INFO  UiHandler:282 - Process Status: Available
+01/27/2022 22:19:56 INFO  UiHandler:151 - --->Signoff | Button-C | Value=Y | Locator=//a[normalize-space()='Signoff']
+01/27/2022 22:19:59 INFO  UiHandler:435 - Successfully Clicked on Signoff button
+01/27/2022 22:19:59 INFO  Base:109 - Completed test case execution
+01/27/2022 22:19:59 INFO  CustomScreenRecorder:93 - Recording saved at :U:\Automation\vc\CMP_Automation/TestExecutionReport/ScreenRecordings/Smoke_02_Canc-27Jan22_22_18_54.avi
+01/27/2022 22:20:01 INFO  WebDriverHelper:145 - Closed the web driver session successfully....
